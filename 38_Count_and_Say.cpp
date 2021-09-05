@@ -9,17 +9,16 @@
  * Then for each group, say the number of characters, then say the character. 
  * To convert the saying into a digit string, replace the counts 
  * with a number and concatenate every saying.
+ * Examples:
+ *   countAndSay(1) = 1
+ *   countAndSay(2) = 11
+ *   countAndSay(3) = 21
+ *   countAndSay(4) = 1211
  */
 
 
 class Solution {
 public:
-    /*
-        1 -> 1
-        2 -> 11
-        3 -> 21
-        4 -> 1211
-    */
     string countAndSay(int n) {
         // base case
         if (n == 1) return "1";
