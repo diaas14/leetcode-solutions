@@ -7,6 +7,7 @@
 class Solution {
 
 public:
+    // two pointer approach without using extra space
     vector<vector<int>> threeSum(vector<int>& nums) {
         sort(nums.begin(), nums.end());
         vector<vector<int>> res;
