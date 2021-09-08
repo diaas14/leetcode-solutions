@@ -9,6 +9,7 @@
 class Solution {
 public:
     string shiftingLetters(string s, vector<int>&shifts) {
+        // starting from the end of the string 
         for (int i=shifts.size()-1, k=0; i>=0; --i, k%=26)
             s[i] = ((s[i] - 'a') + (k+=shifts[i])) % 26 + 'a';
         return s;
