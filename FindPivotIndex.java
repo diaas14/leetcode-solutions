@@ -1,4 +1,5 @@
 /**
+ * 724._Find_Pivot_Index
  * Given an array of integers nums, calculate the pivot index of this array.
  * The pivot index is the index where the sum of all the numbers 
  * strictly to the left of the index is equal to the sum of all the numbers strictly to the index's right.
@@ -8,7 +9,7 @@
  * Return the leftmost pivot index. If no such index exists, return -1.
  */
  
- class Solution {
+ class FindPivotIndex {
     public int pivotIndex(int[] nums) {
         int running_sum = 0, sum = 0;
         for (int num: nums) {
